@@ -818,9 +818,75 @@ $(document)
 </div>
 
 <!---------------------------------------------------------------------->
+<section>
+  <script type="text/javascript">
+    $(document).ready(function() {
+ 	$("#css3dimagePager li").click(function(){
+		var rotateY = ($(this).index() * -90); 
+		$("#css3dimageslider ul").css({"-webkit-transform":"rotateY("+rotateY+"deg)", "-moz-transform":"rotateY("+rotateY+"deg)", "-ms-transform":"rotateY("+rotateY+"deg)", "transform":"rotateY("+rotateY+"deg)"});
+		$("#css3dimagePager li").removeClass("active");
+		$(this).addClass("active");
+	});
+ 	$("#css3dtransparency").click(function() {
+		$("#css3dimageslider").toggleClass("transparency");
+		$(this).toggleClass("active");
+	});
+ });
+  </script>
+  <style>
+    .mt-50{margin-top:100px}.sliderimage{width: 100%;height: 100%}#css3dimagePager, #css3dtransparency{text-align: center;position: relative;z-index: 11;padding: 0 0 10px;margin: 0}#css3dimagePager li{padding-right: 2em;display: inline-block;cursor: pointer}#css3dimagePager li.active, #css3dtransparency.active{font-weight: bold}#css3dimageslider{-webkit-perspective: 1000;-moz-perspective: 1000px;-ms-perspective: 1000;perspective: 1000;-webkit-perspective-origin: 50% 100px;-moz-perspective-origin: 50% 100px;-ms-perspective-origin: 50% 100px;perspective-origin: 50% 100px;margin: 40px auto 20px auto;width: 100%;height: 350px}#css3dimageslider ul{position: relative;margin: 0 auto;height: 281px;width: 450px;-webkit-transform-style: preserve-3d;-moz-transform-style: preserve-3d;-ms-transform-style: preserve-3d;transform-style: preserve-3d;-webkit-transform-origin: 50% 100px 0;-moz-transform-origin: 50% 100px 0;-ms-transform-origin: 50% 100px 0;transform-origin: 50% 100px 0;-webkit-transition: all 1.0s ease-in-out;-moz-transition: all 1.0s ease-in-out;-ms-transition: all 1.0s ease-in-out;transition: all 1.0s ease-in-out}#css3dimageslider ul li{position: absolute;height: 281px;width: 450px;padding: 0px}#css3dimageslider ul li:nth-child(1){-webkit-transform: translateZ(225px);-moz-transform: translateZ(225px);-ms-transform: translateZ(225px);transform: translateZ(225px)}#css3dimageslider ul li:nth-child(2){-webkit-transform: rotateY(90deg) translateZ(225px);-moz-transform: rotateY(90deg) translateZ(225px);-ms-transform: rotateY(90deg) translateZ(225px);transform: rotateY(90deg) translateZ(225px)}#css3dimageslider ul li:nth-child(3){-webkit-transform: rotateY(180deg) translateZ(225px);-moz-transform: rotateY(180deg) translateZ(225px);-ms-transform: rotateY(180deg) translateZ(225px);transform: rotateY(180deg) translateZ(225px)}#css3dimageslider ul li:nth-child(4){-webkit-transform: rotateY(-90deg) translateZ(225px);-moz-transform: rotateY(-90deg) translateZ(225px);-ms-transform: rotateY(-90deg) translateZ(225px);transform: rotateY(-90deg) translateZ(225px)}
+  </style>
+  <div class="row">
+    <h1 class="services_taital">Unidad de Aprendizaje</h1>
 
-    </div>
-</section> 
+    <div id="css3dimageslider" class="transparency">
+      <ul>
+          <li> <img class="sliderimage" src="images/aprendisaje/certificado_agresion_imperialista_venezuela.jpg"> </li>
+          <li> <img class="sliderimage" src="images/aprendisaje/certificado_comunicacion_popular.jpg"> </li>
+          <li> <img class="sliderimage" src="images/aprendisaje/certificado_contexto_internacional.jpg"> </li>
+          <li> <img class="sliderimage" src="images/aprendisaje/certificado_hollywood_contra_venezuela.jpg"> </li>
+          <li> <img class="sliderimage" src="images/aprendisaje/certificado_comunicacion_popular.jpg"> </li>
+          <li> <img class="sliderimage" src="images/aprendisaje/certificado_papel_comunicador.jpg"> </li>
+          <li> <img class="sliderimage" src="images/aprendisaje/certificado_sembrar_comunicacion.jpg"> </li>
+      </ul>
+  </div>
+  <ul id="css3dimagePager">
+      <li class="list-group-item list-group-item-danger">Agresion Imperialista a Venezuela</li>
+      <li class="list-group-item list-group-item-danger">Comunicacion Popular</li>
+      <li class="list-group-item list-group-item-danger">Contexto Internacional/li>
+      <li class="list-group-item list-group-item-danger">Fabrica contennidos desde TELESUR</li>
+      <li class="list-group-item list-group-item-danger">Hollywood contra Venezuela</li>
+      <li class="list-group-item list-group-item-danger">El papel del Comunicador</li>
+      <li class="list-group-item list-group-item-danger">Sembrar comunicación</li>
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</section>
 <!--------------------------------------->   
 <br>
 <h1 class="services_taital">Postgrado</h1>
